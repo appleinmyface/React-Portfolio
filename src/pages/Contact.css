@@ -1,0 +1,79 @@
+/* Contact.css */
+
+/* Center the box on the screen */
+.contact-box {
+    display: flex; /* Align children side by side */
+    justify-content: center; /* Center content horizontally */
+    align-items: flex-start; /* Align items to the top of the container */
+    padding: 20px; /* Add padding around the container */
+    min-height: 100vh; /* Ensure the container takes up full viewport height */
+    box-sizing: border-box; /* Include padding and border in the element’s total width and height */
+  }
+  
+  .contact-content {
+    display: flex; /* Use Flexbox for internal alignment */
+    flex-direction: row; /* Arrange form and message card in a row */
+    gap: 20px; /* Space between form and message card */
+    max-width: 1200px; /* Adjust based on your design */
+    width: 100%; /* Ensure it takes up the full width of its parent */
+    border: 1px solid #ddd; /* Border for the entire box */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for visual depth */
+    background-color: black; /* Background color for the box */
+  }
+  
+  .contact-form {
+    flex: 1; /* Form takes up more space */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form elements */
+    padding: 20px; /* Padding inside the form section */
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%; /* Ensure form elements take up the full width of their container */
+    padding: 10px; /* Padding inside form elements */
+    border: 1px solid #ccc; /* Border for form elements */
+    border-radius: 4px; /* Rounded corners */
+  }
+  
+  .contact-form button {
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 4px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for the button */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .contact-form button:hover {
+    background-color: #0056b3; /* Darker background on hover */
+  }
+  
+  .message-card {
+    flex: 1; /* Message card takes up less space */
+    background-color: black; 
+    border: 1px solid #ddd; /* Border for the card */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for better visibility */
+  }
+  
+  .message-card h2 {
+    margin-top: 0; /* Remove top margin */
+    font-size: 1.5em; /* Adjust heading size */
+  }
+  
+  .message-card p {
+    font-size: 1em; /* Adjust paragraph size */
+  }
+  
+  .status-message {
+    margin-top: 10px;
+    font-weight: bold;
+    color: green; /* Change color based on status */
+  }
+  

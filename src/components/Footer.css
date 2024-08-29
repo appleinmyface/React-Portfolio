@@ -1,0 +1,58 @@
+/* Footer.css */
+
+.footer {
+    background-image: url('../assets/NavFootBackGround.png'); /* Verify path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  
+
+.footer-content {
+    max-width: 1200px; /* Limit width of content */
+    margin: 0 auto; /* Center align the content */
+    padding: 0 20px; /* Add horizontal padding */
+}
+
+.footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 1rem; /* Set font size */
+}
+
+.social-links {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 10px 0 0; /* Add margin for spacing */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center align items */
+}
+
+.social-links li {
+    margin: 0 15px; /* Add spacing between links */
+}
+
+.social-links a {
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1rem; /* Set font size */
+}
+
+.social-links a:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color: #4750ff; /* Change color on hover */
+}
+
+@media (max-width: 768px) {
+    .social-links {
+        flex-direction: column; /* Stack links vertically on smaller screens */
+    }
+
+    .social-links li {
+        margin: 10px 0; /* Add vertical spacing */
+    }
+}

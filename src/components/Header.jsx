@@ -1,11 +1,16 @@
 import React from 'react';
+import Navigation from './Navigation'; // Ensure this path is correct
+import './Header.css'; // Ensure this path is correct
 
-function Header() {
+const Header = () => {
   return (
-    <header>
-      <h1>My Portfolio</h1>
+    <header className="header">
+      <div className="header-content">
+        <h1>Derick Hernandez</h1>
+        <Navigation />
+      </div>
     </header>
   );
-}
+};
 
 export default Header;

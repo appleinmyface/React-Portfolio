@@ -1,0 +1,32 @@
+/* Navigation Styling */
+nav {
+  display: flex;
+  justify-content: center; /* Center align navigation items */
+  background-image: url('../assets/NavFootBackGround.png'); /* Ensure correct path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px; /* Space between links */
+}
+
+nav li {
+  display: inline; /* Ensure items are inline */
+}
+
+nav a {
+  color: #fff; /* Link text color */
+  text-decoration: none;
+}
+
+nav a.active {
+  font-weight: bold; /* Highlight active link */
+}

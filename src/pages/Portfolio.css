@@ -1,0 +1,81 @@
+/* Portfolio Grid Container */
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Project Card Styling */
+  .project-card {
+    border: 2px solid white;
+    animation: border-animation 5s infinite;
+    background-color: black;
+    padding: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  @keyframes border-animation {
+    0%, 100% {
+      border-color: white;
+    }
+    50% {
+      border-color: black;
+    }
+  }
+  
+  /* Project Image Styling */
+  .project-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+  }
+  
+  /* Project Title Styling */
+  .project-title {
+    font-size: 1.4em;
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  .project-title a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .project-title a:hover {
+    color: #ddd;
+  }
+  
+  /* Project Link Styling */
+  .project-link {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .project-link a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .project-link a:hover {
+    color: #ddd;
+  }
+  
+  /* Responsive Grid Adjustments */
+  @media (max-width: 768px) {
+    .portfolio-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .portfolio-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  

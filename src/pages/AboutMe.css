@@ -1,0 +1,43 @@
+.about-me {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 75px;
+  }
+  
+  .bio {
+    max-width: 600px;
+  }
+  
+  .bio h1 {
+    margin-bottom: 10px;
+  }
+  
+  .bio p {
+    margin-bottom: 10px;
+  }
+  
+  .bio ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .bio li {
+    margin-bottom: 5px;
+  }
+  
+  .bio a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .bio a:hover {
+    text-decoration: underline;
+  }
+  

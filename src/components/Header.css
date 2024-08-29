@@ -1,0 +1,20 @@
+/* Header Styling */
+.header {
+  background-image: url('../assets/NavFootBackGround.png'); /* Ensure correct path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 15px 20px;
+  color: #fff;
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Include padding and border in width calculation */
+  text-align: center; /* Center align text */
+}
+
+/* Ensure header content is centered */
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center; /* Center align content */
+}

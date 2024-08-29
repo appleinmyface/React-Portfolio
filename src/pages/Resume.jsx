@@ -1,12 +1,17 @@
-import React from 'react';
-
-function Resume() {
+const Resume = () => {
   return (
-    <section id="resume">
-      <h2>Resume</h2>
-      <p>This is the Resume page where you can list your experience and skills.</p>
+    <section>
+      <a href="/assets/your-resume.pdf" download>Download My Resume</a>
+      <h3>Proficiencies:</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        {/* Add more proficiencies */}
+      </ul>
     </section>
   );
-}
+};
 
 export default Resume;
