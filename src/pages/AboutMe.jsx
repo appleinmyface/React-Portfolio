@@ -1,10 +1,11 @@
 import React from 'react';
 import './AboutMe.css'; // Import your CSS file for styling
+import profilePic from '../assets/ME.png'; // Import the image
 
 const AboutMe = () => {
   return (
     <section className="about-me">
-      <img src="https://th.bing.com/th/id/OIP.xs5O85RBOGm7Big9uBnGKAHaHZ?rs=1&pid=ImgDetMain" alt="Derick Hernandez" className="profile-pic" />
+      <img src={profilePic} alt="Derick Hernandez" className="profile-pic" />
       <div className="bio">
         <h1>Derick Hernandez</h1>
         <p><strong>Role:</strong> Student at UCF, Studying to Become a Full Stack Developer</p>
