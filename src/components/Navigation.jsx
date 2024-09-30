@@ -13,7 +13,7 @@ const Navigation = () => {
   return (
     <nav>
       <div className="nav-header">
-        <h2 className="logo">My Portfolio</h2>
+        <h3 className="logo">Derick Hernandez</h3>
         <div className="hamburger" onClick={toggleMenu}>
           {/* Hamburger Icon */}
           <span className={menuOpen ? 'bar open' : 'bar'}></span>
@@ -25,6 +25,11 @@ const Navigation = () => {
         <li>
           <NavLink to="/" onClick={() => setMenuOpen(false)} className={({ isActive }) => (isActive ? 'active' : '')}>
             Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/about" onClick={() => setMenuOpen(false)} className={({ isActive }) => (isActive ? 'active' : '')}>
+            About
           </NavLink>
         </li>
         <li>

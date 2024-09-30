@@ -1,79 +1,124 @@
 /* Contact.css */
 
 /* Center the box on the screen */
-.contact-box {
-    display: flex; /* Align children side by side */
-    justify-content: center; /* Center content horizontally */
-    align-items: flex-start; /* Align items to the top of the container */
-    padding: 20px; /* Add padding around the container */
-    min-height: 100vh; /* Ensure the container takes up full viewport height */
-    box-sizing: border-box; /* Include padding and border in the element’s total width and height */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: #000; /* Keep background color black */
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #000; /* Ensure background color remains black */
+  padding: 20px;
+}
+
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: white; /* Keep text color white for better contrast */
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #222; /* Dark background for input fields */
+  color: white; /* White text in input fields */
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #999; /* Placeholder color */
+}
+
+.contact-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+.message-card {
+  flex: 1;
+  background-color: #000; /* Ensure background remains black */
+  color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.message-card h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.message-card p {
+  font-size: 1em;
+}
+
+.status-message {
+  margin-top: 10px;
+  font-weight: bold;
+  color: rgb(0, 38, 255);
+}
+
+/* Media Queries for Mobile Support */
+@media (max-width: 768px) {
+  .contact-container {
+      padding: 10px;
+      margin-top: 235px;
   }
-  
   .contact-content {
-    display: flex; /* Use Flexbox for internal alignment */
-    flex-direction: row; /* Arrange form and message card in a row */
-    gap: 20px; /* Space between form and message card */
-    max-width: 1200px; /* Adjust based on your design */
-    width: 100%; /* Ensure it takes up the full width of its parent */
-    border: 1px solid #ddd; /* Border for the entire box */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for visual depth */
-    background-color: black; /* Background color for the box */
+      flex-direction: column;
+      height: 100%;
+      gap: 10px;
   }
-  
-  .contact-form {
-    flex: 1; /* Form takes up more space */
-    display: flex;
-    flex-direction: column;
-    gap: 15px; /* Space between form elements */
-    padding: 20px; /* Padding inside the form section */
+  .contact-form, 
+  .message-card {
+      width: 100%;
+      margin-top:20px
   }
-  
+
   .contact-form input,
   .contact-form textarea {
-    width: 100%; /* Ensure form elements take up the full width of their container */
-    padding: 10px; /* Padding inside form elements */
-    border: 1px solid #ccc; /* Border for form elements */
-    border-radius: 4px; /* Rounded corners */
+      padding: 8px;
   }
-  
+
   .contact-form button {
-    background-color: #007bff; /* Button background color */
-    color: #fff; /* Button text color */
-    border: none; /* Remove default border */
-    padding: 10px 20px; /* Button padding */
-    border-radius: 4px; /* Rounded corners for the button */
-    cursor: pointer; /* Pointer cursor on hover */
-    font-size: 16px; /* Font size for the button */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+      padding: 10px;
+      font-size: 14px;
   }
-  
-  .contact-form button:hover {
-    background-color: #0056b3; /* Darker background on hover */
-  }
-  
-  .message-card {
-    flex: 1; /* Message card takes up less space */
-    background-color: black; 
-    border: 1px solid #ddd; /* Border for the card */
-    border-radius: 8px; /* Rounded corners */
-    padding: 20px; /* Padding inside the card */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for better visibility */
-  }
-  
+
   .message-card h2 {
-    margin-top: 0; /* Remove top margin */
-    font-size: 1.5em; /* Adjust heading size */
+      font-size: 1.3em;
   }
-  
+
   .message-card p {
-    font-size: 1em; /* Adjust paragraph size */
+      font-size: 0.9em;
+      margin-top: 20px;
   }
-  
-  .status-message {
-    margin-top: 10px;
-    font-weight: bold;
-    color: green; /* Change color based on status */
-  }
-  
+}
