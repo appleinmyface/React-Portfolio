@@ -1,43 +1,77 @@
 .about-me {
-    display: flex;
-    align-items: center;
-    padding: 20px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  overflow: hidden; /* Prevent content from overflowing */
+}
+
+.profile-pic {
+  width: 250px;
+  height: 400px;
+  border-radius: 50%;
+  margin-right: 75px;
+}
+
+.bio {
+  max-width: 600px;
+}
+
+/* Style for the typing effect */
+.typing-effect {
+  color: white; /* Change to white */
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8); /* Add glow effect */
+  font-size: 2rem; /* Adjust the font size as needed */
+  margin-bottom: 20px; /* Add space below the name */
+}
+
+.bio h1 {
+  margin-bottom: 15px; /* Spacing below the name */
+}
+
+.bio p {
+  margin-bottom: 15px; /* Increase spacing between paragraphs */
+  line-height: 1.6; /* Increase line height for better readability */
+}
+
+.bio ul {
+  list-style: none;
+  padding: 0;
+}
+
+.bio li {
+  margin-bottom: 10px; /* Increase spacing between list items */
+}
+
+.bio a {
+  color: #007bff; /* Link color */
+  text-decoration: none;
+}
+
+.bio a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Support */
+@media (max-width: 768px) {
+  .about-me {
+    flex-direction: column;
+    align-items: center; /* Center profile picture */
+    padding-top: 320px;
   }
-  
+
   .profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-right: 75px;
+    width: 200px;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 20px;
   }
-  
+
   .bio {
-    max-width: 600px;
+    max-width: 100%;
+    text-align: left; /* Keep bio text aligned left */
   }
-  
+
   .bio h1 {
-    margin-bottom: 10px;
+    text-align: center; /* Center the name in mobile */
   }
-  
-  .bio p {
-    margin-bottom: 10px;
-  }
-  
-  .bio ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .bio li {
-    margin-bottom: 5px;
-  }
-  
-  .bio a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .bio a:hover {
-    text-decoration: underline;
-  }
-  
+}

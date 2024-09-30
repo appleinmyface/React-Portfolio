@@ -5,6 +5,12 @@
   box-sizing: border-box;
 }
 
+/* Set default font properties */
+body {
+  font-family: Arial, sans-serif; /* Set a base font family */
+  line-height: 1.6; /* Increase line height for readability */
+}
+
 /* Ensure full height for html and body */
 html, body {
   height: 100%;
@@ -54,4 +60,40 @@ footer {
   max-width: 1200px; /* Limit the width of the content */
   margin: 0 auto; /* Center the content within the container */
   padding: 0 20px;
+}
+
+/* Additional reset styles */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; /* Remove margin from headings */
+  font-weight: normal; /* Set headings to normal weight */
+}
+
+ul, ol {
+  list-style: none; /* Remove default list styles */
+}
+
+a {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Allow links to inherit text color */
+}
+
+button {
+  padding: 0; /* Remove default padding */
+  border: none; /* Remove default border */
+  background: none; /* Remove default background */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Responsive images */
+img {
+  max-width: 100%; /* Ensure images do not overflow their container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Ensure that form elements have consistent styling */
+input, textarea, select {
+  font-family: inherit; /* Use inherited font for input elements */
+  font-size: inherit; /* Use inherited font size */
+  line-height: inherit; /* Use inherited line height */
+  margin: 0; /* Reset margin */
 }
