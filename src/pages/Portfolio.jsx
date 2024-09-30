@@ -51,6 +51,7 @@ const Portfolio = () => {
   ];
 
   return (
+    // Portfolio component JSX
     <div className="portfolio-container">
       {projects.map((project, index) => (
         <Project
