@@ -30,7 +30,7 @@ const AboutMe = () => {
       <img src={profilePic} alt="Derick Hernandez" className="profile-pic" />
       <div className="bio">
         <TypingEffect text="D erick Hernandez" speed={100} />
-        <p><strong>Role:</strong> Student at UCF, Studying to Become a Full Stack Developer</p>
+        <p><strong>Role:</strong> Studied at UCF to become a Full Stack Developer. Graduated in September of 2024</p>
         <p><strong>Location:</strong> Florida, Born in Puerto Rico</p>
         <p><strong>Education:</strong> I began studying coding in high school, focusing on Java and Python. Now, I am fully immersed in JavaScript and a range of full-stack languages and technologies, including JavaScript, Node.js, React.js, CSS, HTML, SQL, MongoDB, PostgreSQL, and Sequelize.</p>
         <p><strong>Experience:</strong> As a UCF (University of Central Florida) graduate, I have developed numerous applications, which you can explore in the portfolio section of this website.</p>
