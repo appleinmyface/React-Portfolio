@@ -52,6 +52,8 @@ const Portfolio = () => {
 
   return (
     // Portfolio component JSX
+    <div className="portfolio">
+    <h1 className="portfolio-title text-lg-start">Portfolio</h1>
     <div className="portfolio-container">
       {projects.map((project, index) => (
         <Project
@@ -63,6 +65,7 @@ const Portfolio = () => {
         />
       ))}
     </div>
+  </div>
   );
 };
 

@@ -1,4 +1,10 @@
 /* Portfolio Grid Container */
+.portfolio {
+    background-color: #000000;
+    padding: 50px 0;
+    margin-top: 100px;
+}
+
 .portfolio-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -7,6 +13,44 @@
     max-width: 1200px;
     margin: 0 auto;
   }
+
+.portfolio-title {
+    font-weight: bold;
+    font-size: 5rem;
+    text-align: center; /* Center the title */
+    background: linear-gradient(272deg, #fc9b09, #b415ff);
+    background-size: 400% 400%; /* Ensure the background covers the text properly */
+    background-clip: text; /* Use background clip for text */
+    -webkit-background-clip: text; /* For WebKit browsers */
+    -webkit-text-fill-color: transparent; /* Makes text transparent, so only gradient shows */
+    animation: GradientAnimation 5s ease infinite; /* Use the same gradient animation */
+}
+
+/* Gradient animation keyframes */
+@keyframes GradientAnimation {
+    0% {
+        background-position: 0% 52%;
+    }
+    50% {
+        background-position: 100% 49%;
+    }
+    100% {
+        background-position: 0% 52%;
+    }
+}
+
+/* Gradient animation keyframes for the button */
+@keyframes GradientAnimationButton {
+    0% {
+        background-position: 0% 52%;
+    }
+    50% {
+        background-position: 100% 49%;
+    }
+    100% {
+        background-position: 0% 52%;
+    }
+}
   
   /* Project Card Styling */
   .project-card {
@@ -66,27 +110,34 @@
     color: #ddd;
   }
   
-  /* Responsive Grid Adjustments */
-  @media (max-width: 768px) {
-    .portfolio-container {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .portfolio-container {
-      grid-template-columns: 1fr;
-    }
-    .portfolio-container {
-      padding-top: 1450px;
-    }
-  }
 
+/* Medium devices (tablets) */
+@media (max-width: 768px) {
+  .portfolio {
+    margin-top: 500px;
+  }
+  .portfolio-container {
+      display: grid; /* Ensure grid display */
+      grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+      gap: 20px; /* Add some gap between items */
+  }
   .portfolio-title {
-  text-align: center; /* Center the title */
-  font-size: 2.5rem; /* Adjust the size */
-  color: #333; /* Change the color as needed */
-  margin-bottom: 20px; /* Space below the title */
+      font-size: 4rem; /* Adjust font size */
+  }
 }
+
+/* Small devices (mobile phones) */
+@media (max-width: 480px) {
+  .portfolio {
+    margin-top: 1500px;
+  }
+  .portfolio-container {
+      display: grid; /* Ensure grid display */
+      grid-template-columns: 1fr; /* Single column layout */
+      padding-top: 20px; /* Adjust padding */
+      gap: 10px; /* Add gap for mobile layout */
+  }
+}
+
 
   

@@ -13,7 +13,7 @@ const Home = () => {
             </header>
             <div className="home-buttons">
                 <a href="/contact" className="btn connect">Connect with Me</a>
-                <a href="/resume" className="btn resume" target="_blank" rel="noopener noreferrer">Resume</a>
+                <a href="/resume" className="btn resume">Resume</a>
             </div>
         </div>
     );

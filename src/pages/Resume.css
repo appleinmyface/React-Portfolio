@@ -9,7 +9,7 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-family: 'Arial', sans-serif;
-    margin-top: 500px;
+    margin-top: 900px;
   }
   
   .resume-container h1 {
@@ -82,58 +82,199 @@
   }
   
   /* Mobile Support */
+  @media only screen and (max-width: 1024px) {
+    .resume-container {
+      padding: 30px;
+      margin-top: 500px;
+    }
+
+    .resume-container h1 {
+      font-size: 2.2em;
+    }
+
+    .resume-container p, .resume-container ul {
+      font-size: 1.1em;
+    }
+
+    .resume-container h2 {
+      font-size: 1.6em;
+    }
+
+    .resume-container h3 {
+      font-size: 1.3em;
+    }
+
+    .resume-container a.download-link {
+      padding: 10px 18px;
+      font-size: 1.1em;
+    }
+  }
+
   @media only screen and (max-width: 768px) {
     .resume-container {
       padding: 20px;
-      margin-top: 550px;
+      margin-top: 800px;
     }
-  
+
     .resume-container h1 {
       font-size: 2em;
     }
-  
+
     .resume-container p, .resume-container ul {
       font-size: 1em;
     }
-  
+
     .resume-container h2 {
       font-size: 1.5em;
     }
-  
+
     .resume-container h3 {
       font-size: 1.2em;
     }
-  
+
     .resume-container a.download-link {
       padding: 10px 15px;
       font-size: 1em;
     }
   }
-  
-  @media only screen and (max-width: 480px) {
+
+  @media only screen and (max-width: 430px) {
     .resume-container {
-      padding: 10px;
+      padding: 15px;
+      margin-top: 1100px;
     }
-  
+
+    .resume-container h1 {
+      font-size: 1.9em;
+    }
+
+    .resume-container p, .resume-container ul {
+      font-size: 0.95em;
+    }
+
+    .resume-container h2 {
+      font-size: 1.4em;
+    }
+
+    .resume-container h3 {
+      font-size: 1.2em;
+    }
+
+    .resume-container a.download-link {
+      padding: 9px 14px;
+      font-size: 0.95em;
+    }
+  }
+
+  @media only screen and (max-width: 414px) {
+    .resume-container {
+      padding: 16px;
+      margin-top: 1200px;
+    }
+
     .resume-container h1 {
       font-size: 1.8em;
     }
-  
+
+    .resume-container p, .resume-container ul {
+      font-size: 0.95em;
+    }
+
+    .resume-container h2 {
+      font-size: 1.4em;
+    }
+
+    .resume-container h3 {
+      font-size: 1.2em;
+    }
+
+    .resume-container a.download-link {
+      padding: 9px 14px;
+      font-size: 0.95em;
+    }
+  }
+
+  @media only screen and (max-width: 390px) {
+    .resume-container {
+      padding: 14px;
+      margin-top: 1150px;
+    }
+
+    .resume-container h1 {
+      font-size: 1.7em;
+    }
+
     .resume-container p, .resume-container ul {
       font-size: 0.9em;
     }
-  
+
     .resume-container h2 {
       font-size: 1.3em;
     }
-  
+
     .resume-container h3 {
       font-size: 1.1em;
     }
-  
+
     .resume-container a.download-link {
       padding: 8px 12px;
       font-size: 0.9em;
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+    .resume-container {
+      padding: 12px;
+      margin-top: 1400px;
+    }
+
+    .resume-container h1 {
+      font-size: 1.8em;
+    }
+
+    .resume-container p, .resume-container ul {
+      font-size: 0.9em;
+    }
+
+    .resume-container h2 {
+      font-size: 1.3em;
+    }
+
+    .resume-container h3 {
+      font-size: 1.1em;
+    }
+
+    .resume-container a.download-link {
+      padding: 8px 12px;
+      font-size: 0.9em;
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    .resume-container {
+      padding: 10px;
+      margin-top: 1250px;
+    }
+
+    .resume-container h1 {
+      font-size: 1.6em;
+    }
+
+    .resume-container p, .resume-container ul {
+      font-size: 0.85em;
+    }
+
+    .resume-container h2 {
+      font-size: 1.2em;
+    }
+
+    .resume-container h3 {
+      font-size: 1em;
+    }
+
+    .resume-container a.download-link {
+      padding: 7px 10px;
+      font-size: 0.85em;
     }
   }
   

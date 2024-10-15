@@ -75,3 +75,26 @@
     text-align: center; /* Center the name in mobile */
   }
 }
+
+/* Small devices (mobile phones) */
+@media (max-width: 480px) {
+  .about-me {
+    margin-top: 200px;
+  }
+
+  .profile-pic {
+    width: 150px;
+  }
+
+  .typing-effect {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .bio h1 {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .bio p {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+}

@@ -60,7 +60,9 @@ const Contact = () => {
   };
 
   return (
+
     <div className="contact-container">
+      <h1 className="contact-title">Contact Me</h1>
       <div className="contact-content">
         <form className="contact-form" onSubmit={handleSubmit}>
           <input
@@ -86,7 +88,7 @@ const Contact = () => {
             onChange={handleChange}
             required
           ></textarea>
-          <button type="submit" disabled={loading}>
+          <button type="submit" className="submit-button" disabled={loading}>
             {loading ? "Sending..." : "Send"}
           </button>
           {status && <p className="status-message">{status}</p>}

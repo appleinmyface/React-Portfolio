@@ -3,11 +3,38 @@
 /* Center the box on the screen */
 .contact-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   box-sizing: border-box;
   background-color: #000; /* Keep background color black */
+}
+
+.contact-title {
+  font-weight: bold;
+  font-size: 4rem; /* Adjust size as needed */
+  text-align: center; /* Center the title */
+  margin-bottom: 20px; /* Add some space below the title */
+  background: linear-gradient(272deg, #fc9b09, #b415ff);
+  background-size: 400% 400%; /* Ensure the background covers the text properly */
+  background-clip: text; /* Use background clip for text */
+  -webkit-background-clip: text; /* For WebKit browsers */
+  -webkit-text-fill-color: transparent; /* Makes text transparent, so only gradient shows */
+  animation: GradientAnimation 5s ease infinite; /* Use your gradient animation */
+}
+
+/* Gradient animation keyframes */
+@keyframes GradientAnimation {
+  0% {
+      background-position: 0% 52%;
+  }
+  50% {
+      background-position: 100% 49%;
+  }
+  100% {
+      background-position: 0% 52%;
+  }
 }
 
 .contact-content {
@@ -46,15 +73,36 @@
   color: #999; /* Placeholder color */
 }
 
+/* Button Gradient Animation */
 .contact-form button {
-  background-color: #007bff;
-  color: white;
+  background: linear-gradient(272deg, #fc9b09, #b415ff);
+  background-size: 400% 400%; /* Ensure the background covers the button */
   border: none;
   padding: 10px 20px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  transition: background-color 0.3s;
+  color: white; /* Keep text color white */
+  animation: GradientAnimationButton 5s ease infinite; /* Use your gradient animation */
+  transition: color 0.3s; /* Add a transition for text color */
+}
+
+/* Gradient animation keyframes for the button */
+@keyframes GradientAnimationButton {
+  0% {
+      background-position: 0% 52%;
+  }
+  50% {
+      background-position: 100% 49%;
+  }
+  100% {
+      background-position: 0% 52%;
+  }
+}
+
+/* Hover effect */
+.contact-form button:hover {
+  color: #000; /* Change text color on hover */
 }
 
 .contact-form button:hover {
@@ -90,7 +138,7 @@
 @media (max-width: 768px) {
   .contact-container {
       padding: 10px;
-      margin-top: 235px;
+      margin-top: 100px;
   }
   .contact-content {
       flex-direction: column;
@@ -100,7 +148,8 @@
   .contact-form, 
   .message-card {
       width: 100%;
-      margin-top:20px
+      margin-top:20px;
+      text-align: center;
   }
 
   .contact-form input,
@@ -120,5 +169,28 @@
   .message-card p {
       font-size: 0.9em;
       margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+      margin-top: 200px;
+  }
+  .contact-title {
+      font-size: 3rem;
+  }
+  .contact-form input,
+  .contact-form textarea {
+      padding: 6px;
+  }
+  .contact-form button {
+      padding: 8px;
+      font-size: 12px;
+  }
+  .message-card h2 {
+      font-size: 1.2em;
+  }
+  .message-card p {
+      font-size: 0.8em;
   }
 }
