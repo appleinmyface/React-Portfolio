@@ -25,7 +25,7 @@ const Portfolio = () => {
       deployedUrl: 'https://appleinmyface.github.io/Interactive-Task-Board/',  
     },
     {
-      name: 'PlayHits',
+      name: "Jaden's Wood Shop",
       image: Jwoodshop,  
       githubUrl: 'https://github.com/appleinmyface',
       deployedUrl: 'https://www.jadenswoodshop.com/',  
