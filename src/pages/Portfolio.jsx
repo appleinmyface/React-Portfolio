@@ -5,7 +5,7 @@ import './Portfolio.css'; // Import the CSS file for styling
 //images
 import weatherdashboard from '../assets/weatherdashboard.png';
 import TaskBoard from '../assets/TaskBoard.png';
-import PlayHits from '../assets/PlayHits.png';
+import Jwoodshop from '../assets/Jwoodshop.png';
 import movie from '../assets/mov.ie.png';
 import blog from '../assets/simplyblogging.png';
 
@@ -26,9 +26,9 @@ const Portfolio = () => {
     },
     {
       name: 'PlayHits',
-      image: PlayHits,  
-      githubUrl: 'https://github.com/Raikuzu92/PlayHits',
-      deployedUrl: 'https://playhits-1.onrender.com',  
+      image: Jwoodshop,  
+      githubUrl: 'https://github.com/appleinmyface',
+      deployedUrl: 'https://www.jadenswoodshop.com/',  
     },
     {
       name: 'Mov.Ie',
