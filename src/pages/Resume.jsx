@@ -6,7 +6,7 @@ const Resume = () => {
     <div className="resume-container">
       <h1>Derick Hernandez</h1>
       <p>
-        689-677-2692 | <a href="mailto:derickhh.05@gmail.com">derickhh.05@gmail.com</a><br />
+        <a href="mailto:derickhh.05@gmail.com">derickhh.05@gmail.com</a><br />
         LinkedIn: <a href="https://www.linkedin.com/in/derick-hernandez-922b50325/" target="_blank" rel="noopener noreferrer">linkedin.com/in/derick-hernandez-922b50325/</a><br />
         GitHub: <a href="https://github.com/appleinmyface" target="_blank" rel="noopener noreferrer">github.com/appleinmyface</a>
       </p>
